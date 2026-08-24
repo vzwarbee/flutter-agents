@@ -1,14 +1,13 @@
 {
   "name": "dart-flutter",
   "owner": {
-    "name": "Dart and Flutter Team",
-    "email": "stores@flutter.io"
+    "name": "vzwarbee"
   },
-  "description": "Official Claude Marketplace for Dart and Flutter plugins",
+  "description": "Maintained Flutter and Dart agent plugin distribution based on the upstream Flutter repository.",
   "plugins": [
     {
       "name": "dart-flutter",
-      "description": "The official Claude plugin for Dart and Flutter that installs Flutter/Dart Skills and Dart MCP server for building natively compiled, visually stunning applications for mobile, web, desktop, and embedded devices from a single codebase",
+      "description": "Maintained distribution of Flutter/Dart skills and the Dart MCP configuration.",
       "category": "development",
       "tags": [
         "dart",

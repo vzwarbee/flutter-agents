@@ -15,6 +15,10 @@ pubspec.lock
 
 # Mac
 .DS_Store
+._*
+
+# Node.js (npm distribution CLI)
+node_modules/
 
 # Coverage
 coverage/

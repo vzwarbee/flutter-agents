@@ -1,0 +1,48 @@
+{
+  "name": "flutter-agents",
+  "version": "1.0.0",
+  "description": "Install maintained Flutter and Dart agent skills and bootstrap project guidance.",
+  "type": "module",
+  "bin": {
+    "flutter-agents": "src/cli.mjs"
+  },
+  "files": [
+    "src/",
+    "templates/",
+    "skills/",
+    "rules/",
+    ".mcp.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/cli.mjs && node --check src/cli-lib.mjs",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "dependencies": {
+    "skills": "1.5.23"
+  },
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vzwarbee/flutter-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vzwarbee/flutter-agents/issues"
+  },
+  "homepage": "https://github.com/vzwarbee/flutter-agents#readme",
+  "keywords": [
+    "flutter",
+    "dart",
+    "agent-skills",
+    "codex",
+    "claude-code",
+    "cursor",
+    "gemini-cli",
+    "opencode"
+  ]
+}

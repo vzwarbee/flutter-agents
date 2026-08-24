@@ -1,13 +1,13 @@
 {
   "name": "dart-flutter",
-  "version": "1.0.0",
-  "description": "Official Codex plugin for Dart and Flutter that installs Flutter/Dart Skills and Dart MCP server for building natively compiled, visually stunning applications for mobile, web, desktop, and embedded devices from a single codebase.",
+  "version": "1.0.1",
+  "description": "Maintained distribution of the upstream Dart and Flutter skills and Dart MCP configuration for Codex.",
   "author": {
-    "name": "Dart and Flutter",
-    "url": "https://flutter.dev"
+    "name": "vzwarbee",
+    "url": "https://github.com/vzwarbee"
   },
-  "homepage": "https://github.com/flutter/agent-plugins",
-  "repository": "https://github.com/flutter/agent-plugins",
+  "homepage": "https://github.com/vzwarbee/flutter-agents",
+  "repository": "https://github.com/vzwarbee/flutter-agents",
   "license": "BSD-3-Clause",
   "keywords": [
     "flutter",
@@ -22,13 +22,13 @@
   "interface": {
     "displayName": "Dart and Flutter",
     "shortDescription": "Build and manage Dart and Flutter apps from Codex.",
-    "longDescription": "Use official Dart and Flutter skills and the MCP server to develop apps, run workflows, and manage code from Codex.",
-    "developerName": "Dart and Flutter",
+    "longDescription": "Use the maintained distribution of upstream Dart and Flutter skills and the MCP server from Codex.",
+    "developerName": "vzwarbee",
     "category": "Developer Tools",
     "capabilities": [
       "Skills",
       "MCP"
     ],
-    "websiteURL": "https://flutter.dev"
+    "websiteURL": "https://github.com/vzwarbee/flutter-agents"
   }
 }
