@@ -1,6 +1,6 @@
 {
   "name": "flutter-agents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Install maintained Flutter and Dart agent skills and bootstrap project guidance.",
   "type": "module",
   "bin": {
