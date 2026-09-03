@@ -5,5 +5,6 @@ environment:
   sdk: ^3.10.8
 
 workspace:
+  - packages/agent_flutter_skills
   - tool/generator
   - tool/dart_skills_lint

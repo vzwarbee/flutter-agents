@@ -18,6 +18,8 @@
   "scripts": {
     "test": "node --test",
     "check": "node --check src/cli.mjs && node --check src/cli-lib.mjs",
+    "generate:dart-assets": "node tool/generate_bundled_files.mjs",
+    "check:dart-assets": "node tool/generate_bundled_files.mjs --check",
     "prepublishOnly": "npm run check && npm test"
   },
   "dependencies": {

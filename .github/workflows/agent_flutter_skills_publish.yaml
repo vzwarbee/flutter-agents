@@ -1,0 +1,14 @@
+name: Publish agent_flutter_skills
+
+on:
+  push:
+    tags:
+      - 'agent_flutter_skills-v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  publish:
+    permissions:
+      id-token: write
+    uses: dart-lang/setup-dart/.github/workflows/publish.yml@65eb853c7ba17dde3be364c3d2858773e7144260 # v1.7.2
+    with:
+      working-directory: packages/agent_flutter_skills

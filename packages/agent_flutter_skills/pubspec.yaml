@@ -1,0 +1,25 @@
+name: agent_flutter_skills
+description: Install maintained Flutter and Dart agent skills and bootstrap project guidance.
+version: 1.0.0
+repository: https://github.com/vzwarbee/flutter-agents
+homepage: https://github.com/vzwarbee/flutter-agents
+issue_tracker: https://github.com/vzwarbee/flutter-agents/issues
+
+topics:
+  - flutter
+  - dart
+  - agent
+  - cli
+  - skill
+
+environment:
+  sdk: ^3.10.8
+
+resolution: workspace
+
+executables:
+  afs: agent_flutter_skills
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6

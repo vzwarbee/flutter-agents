@@ -9,6 +9,7 @@ Use the npm distribution when you want a quick project or global skill installat
 ## Requirements
 
 - Node.js 22.20 or newer for the npm installer.
+- Dart 3.10 or newer for the pub.dev installer.
 - Dart 3.9 or newer when using the Dart MCP server.
 - One of the supported agents: OpenCode, Codex, Claude Code, Cursor, or Gemini CLI.
 
@@ -38,6 +39,24 @@ npx skills list --json
 ```
 
 Then give the agent a concrete task, for example: “Fix the RenderFlex overflow on the profile screen.” Compatible agents discover skill metadata first and load the matching skill instructions only when needed.
+
+## Dart-native installation
+
+Flutter and Dart projects can install the same distribution without Node.js:
+
+```bash
+dart install afs
+afs
+```
+
+The legacy activation command is also supported:
+
+```bash
+dart pub global activate agent_flutter_skills
+```
+
+The npm and pub.dev packages contain the same generated skill catalog. Choose
+one installer for a project; installing both is unnecessary.
 
 ## Install globally
 

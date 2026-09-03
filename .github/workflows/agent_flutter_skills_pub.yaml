@@ -1,0 +1,40 @@
+name: agent_flutter_skills package
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    paths:
+      - 'packages/agent_flutter_skills/**'
+      - 'skills/**'
+      - 'templates/AGENTS.md'
+      - 'tool/generate_bundled_files.mjs'
+      - 'pubspec.yaml'
+      - '.github/workflows/agent_flutter_skills_pub.yaml'
+  push:
+    branches: [main]
+    paths:
+      - 'packages/agent_flutter_skills/**'
+      - 'skills/**'
+      - 'templates/AGENTS.md'
+      - 'tool/generate_bundled_files.mjs'
+      - 'pubspec.yaml'
+      - '.github/workflows/agent_flutter_skills_pub.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: dart-lang/setup-dart@65eb853c7ba17dde3be364c3d2858773e7144260 # v1.7.2
+        with:
+          sdk: stable
+      - run: npm run check:dart-assets
+      - run: dart pub get
+      - run: dart format --output=none --set-exit-if-changed packages/agent_flutter_skills
+      - run: dart analyze --fatal-infos packages/agent_flutter_skills
+      - run: dart test packages/agent_flutter_skills
+      - run: dart pub -C packages/agent_flutter_skills publish --dry-run
