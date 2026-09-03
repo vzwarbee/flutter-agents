@@ -1,4 +1,4 @@
-## 1.0.0
+## 1.0.1
 
 - Add the Dart-native `agent_flutter_skills` CLI for installing the bundled Flutter and Dart skills without requiring Node.js.
 - Support project and global installation for OpenCode, Codex, Claude Code, Cursor, and Gemini CLI.
