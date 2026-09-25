@@ -1,7 +1,7 @@
 {
   "name": "dart-flutter",
   "displayName": "Dart and Flutter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Maintained distribution of the upstream Dart and Flutter skills and Dart MCP configuration for Claude Code.",
   "author": {
     "name": "vzwarbee",
